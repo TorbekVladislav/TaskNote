@@ -23,6 +23,7 @@ namespace TaskNote.Controllers
             return View(tasks);
         }
 
+        // GET: Tasks
         public ActionResult TomorrowTask()
         {
             var date = DateTime.Today;
@@ -31,6 +32,7 @@ namespace TaskNote.Controllers
             return View(tasks);
         }
 
+        // GET: Tasks
         public ActionResult OtherDayTask()
         {
             var date = DateTime.Today;
@@ -39,6 +41,7 @@ namespace TaskNote.Controllers
             return View(tasks);
         }
 
+        // GET: Tasks
         public ActionResult MissedTask()
         {
             var date = DateTime.Today;
@@ -124,15 +127,6 @@ namespace TaskNote.Controllers
             db.Tasks.Remove(task);
             db.SaveChanges();
             return RedirectToAction("Index");
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
         }
     }
 }
