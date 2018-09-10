@@ -1,0 +1,45 @@
+﻿@model TaskNote.Models.Task
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">Удаление</div>
+    <table class="table table-striped">
+        <div class="container">
+            <div class="form-group">
+                <div class="form-group">
+                    <dt>
+                        <p>Задача: </p>
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.TaskNote)
+                    </dd>
+                </div>
+
+                <div class="form-group">
+                    <dt>
+                        <p>Дата: </p>
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.FinishDate)
+                    </dd>
+                </div>
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-actions no-color">
+                        <input type="submit" value="Удалить" class="btn btn-primary" /> |
+                        @Html.ActionLink("Вернуться к списку задач", "Index")
+                    </div>
+                }
+            </div>
+        </div>
+    </table>
+
+</div>

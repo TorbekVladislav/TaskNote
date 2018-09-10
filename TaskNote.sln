@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskNote", "TaskNote\TaskNote.csproj", "{785DE94E-BD41-49EE-A303-F4CE7AE92385}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{785DE94E-BD41-49EE-A303-F4CE7AE92385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{785DE94E-BD41-49EE-A303-F4CE7AE92385}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{785DE94E-BD41-49EE-A303-F4CE7AE92385}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{785DE94E-BD41-49EE-A303-F4CE7AE92385}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {15ACE859-4C77-4554-90D5-2604295E53CF}
+	EndGlobalSection
+EndGlobal

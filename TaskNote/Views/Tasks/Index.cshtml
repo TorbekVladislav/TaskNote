@@ -1,0 +1,39 @@
+﻿@model IEnumerable<TaskNote.Models.Task>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">Задачи на сегодня</div>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th width="600">
+                <p>Задача</p>
+            </th>
+            <th>
+                <p>Дата выполнения</p>
+            </th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TaskNote)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FinishDate.Date)
+                </td>
+                <td>
+                    @Html.ActionLink("Редактировать", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Удалить", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
